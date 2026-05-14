@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EndScreen</class>
+ <widget class="QWidget" name="EndScreen">
+  <property name="windowTitle"><string>Oyun Bitti</string></property>
+  <property name="minimumSize"><size><width>520</width><height>240</height></size></property>
+  <layout class="QVBoxLayout" name="rootLayout">
+   <property name="leftMargin"><number>24</number></property>
+   <property name="topMargin"><number>24</number></property>
+   <property name="rightMargin"><number>24</number></property>
+   <property name="bottomMargin"><number>24</number></property>
+   <property name="spacing"><number>18</number></property>
+   <item>
+    <widget class="QLabel" name="lbl_winner">
+     <property name="text"><string>Kazanan</string></property>
+     <property name="alignment"><set>Qt::AlignCenter</set></property>
+     <property name="styleSheet"><string>font-size: 22px; font-weight: bold;</string></property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="buttonRow">
+     <item><spacer name="leftSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint"><size><width>40</width><height>20</height></size></property></spacer></item>
+     <item><widget class="QPushButton" name="btn_replay"><property name="minimumSize"><size><width>130</width><height>36</height></size></property><property name="text"><string>Tekrar Oyna</string></property></widget></item>
+     <item><spacer name="rightSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint"><size><width>40</width><height>20</height></size></property></spacer></item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

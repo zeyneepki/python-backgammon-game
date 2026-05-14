@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StartScreen</class>
+ <widget class="QWidget" name="StartScreen">
+  <property name="windowTitle"><string>Tavla Oyununa Hoş Geldiniz</string></property>
+  <property name="minimumSize"><size><width>470</width><height>300</height></size></property>
+  <layout class="QVBoxLayout" name="rootLayout">
+   <property name="leftMargin"><number>28</number></property>
+   <property name="topMargin"><number>24</number></property>
+   <property name="rightMargin"><number>28</number></property>
+   <property name="bottomMargin"><number>24</number></property>
+   <property name="spacing"><number>14</number></property>
+   <item>
+    <widget class="QLabel" name="lbl_title">
+     <property name="text"><string>Tavla Oyununa Hoş Geldiniz</string></property>
+     <property name="alignment"><set>Qt::AlignCenter</set></property>
+     <property name="styleSheet"><string>font-size: 22px; font-weight: bold;</string></property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0"><widget class="QLabel" name="lbl_host"><property name="text"><string>Sunucu IP:</string></property></widget></item>
+     <item row="0" column="1"><widget class="QLineEdit" name="host_edit"/></item>
+     <item row="1" column="0"><widget class="QLabel" name="lbl_port"><property name="text"><string>Port:</string></property></widget></item>
+     <item row="1" column="1"><widget class="QLineEdit" name="port_edit"/></item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="status_label">
+     <property name="text"><string>Sunucuyu başlatıp iki istemci açın.</string></property>
+     <property name="alignment"><set>Qt::AlignCenter</set></property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer"><property name="orientation"><enum>Qt::Vertical</enum></property><property name="sizeHint"><size><width>20</width><height>20</height></size></property></spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="buttonRow">
+     <item><spacer name="leftSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint"><size><width>40</width><height>20</height></size></property></spacer></item>
+     <item><widget class="QPushButton" name="btn_start"><property name="minimumSize"><size><width>130</width><height>36</height></size></property><property name="text"><string>Oyuna Başla</string></property></widget></item>
+     <item><spacer name="rightSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint"><size><width>40</width><height>20</height></size></property></spacer></item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
